@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame" />
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-rounded-box-component"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="leather" src="./leather.jpg" />
+        <img id="normalLeather" src="./leather/normals.jpg" />
+
+        <img id="oak" src="./oak/albedo.jpg" />
+        <img id="oakNormals" src="./oak/normals.jpg" />
+
+        <video id="arrows" autoplay loop="true" src="./arrows02.mp4"></video>
+
+        <a-asset-item
+          id="manChar"
+          src="https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/male/model.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="walkingChar"
+          src="https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/korrigan-hat/model.gltf"
+        ></a-asset-item>
+      </a-assets>
+
+      <a-entity
+        gltf-model="#walkingChar"
+        scale="1.5 1.5 1.5"
+        position="0 1 -2.5"
+        animation-mixer="clip: pose_chapeau"
+      ></a-entity>
+
+      <a-plane
+        position="0 8 -3"
+        rotation="0 0 0"
+        width="3"
+        height="1.5"
+        color="#7BC8A4"
+        animation="property: position; to: 0 2 -3; dur: 1000; easing: easeOutCubic; loop: false; delay: 800"
+      ></a-plane>
+
+      <a-plane
+        position="-5 2 -3"
+        rotation="0 0 0"
+        width="1.5"
+        height="3"
+        color="#cc22aa"
+      ></a-plane>
+
+      <a-plane
+        position="5 2 -3"
+        rotation="0 0 0"
+        width="1.5"
+        height="3"
+        color="#cc22aa"
+      ></a-plane>
+
+      <a-box
+        position="0 0.5 -2.5"
+        depth="0.5"
+        width="3"
+        height="1"
+        material="src: #oak; repeat: 0.4 0.4; normalMap: #normalLeather"
+      ></a-box>
+      <a-rounded-box
+        position="0 0.5 0"
+        depth="2.5"
+        width="5"
+        height="1.0"
+        radius="0.3"
+        material="src: #leather; repeat: 0.4 0.4; normalMap: #oakNormals"
+      ></a-rounded-box>
+
+      <a-sky src="./skybox.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>
