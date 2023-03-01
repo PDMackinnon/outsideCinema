@@ -1,7 +1,7 @@
 # outsideCinema
-This demo startwd from a clone of the boilerplate github found via the link below. Some of the given instructions are retained below; releveant if you want to use github, or if you just want to download the Zip of the repository. 
+This demo started from a clone of the boilerplate github found via the link below. Some of the given instructions are retained below; relevant if you want to use github, or if you just want to download the Zip of the repository. 
 
-You do not ned to follow the instructions given, but can instead just use LiveServer in VSCode to serve the site locally for testing on the desktop browser or in a locally connected device
+You do not need to follow the instructions given, but can instead just use LiveServer in VSCode to serve the site locally for testing on the desktop browser or in a locally connected device
 
 You may also find alternative options for deployment to the web. The option described below is for github pages. This can also be configured on the GitHub repo by going to Settings -> github pages and enabling the feature there
 
