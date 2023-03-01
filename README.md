@@ -3,7 +3,7 @@ This demo started from a clone of the boilerplate github found via the link belo
 
 You do not need to follow the instructions given, but can instead just use LiveServer in VSCode to serve the site locally for testing on the desktop browser or in a locally connected device
 
-You may also find alternative options for deployment to the web. The option described below is for github pages. This can also be configured on the GitHub repo by going to Settings -> github pages and enabling the feature there
+You may also find alternative options for deployment to the web. The option described below is for github pages. This can also be configured on the GitHub repo by going to Settings -> Pages and enabling the feature there
 
 Other easy recommended options for hosting are : codeSandbox, Glitch
 
